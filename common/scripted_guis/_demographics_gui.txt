@@ -1,0 +1,587 @@
+scripted_gui = {
+	state_demographics_summary_gui = {
+		window_name = "state_demographics_summary_container"
+		parent_window_token = selected_state_view
+		context_type = selected_state_context
+
+		triggers = {
+			state_demographics_toggle_pie_chart_icon_visible = {
+				ROOT = {
+					has_country_flag = eoanbr_state_demographics_pie_chart_view_flag
+				}
+			}
+			state_demographics_toggle_majority_icon_visible = {
+				ROOT = {
+					NOT = {
+						has_country_flag = eoanbr_state_demographics_pie_chart_view_flag
+					}
+				}
+			}
+			state_demographics_pop_details_pie_chart_icon_visible = {
+				ROOT = {
+					has_country_flag = eoanbr_state_demographics_pie_chart_view_flag
+				}
+				check_variable = {
+					pops_pop_array^num = 0
+				}
+			}
+			state_demographics_pop_details_pie_chart_icon_overlay_visible = {
+				ROOT = {
+					has_country_flag = eoanbr_state_demographics_pie_chart_view_flag
+				}
+			}
+			state_demographics_culture_details_pie_chart_icon_visible = {
+				ROOT = {
+					has_country_flag = eoanbr_state_demographics_pie_chart_view_flag
+				}
+				check_variable = {
+					pops_culture_array^num = 0
+				}
+			}
+			state_demographics_culture_details_pie_chart_icon_overlay_visible = {
+				ROOT = {
+					has_country_flag = eoanbr_state_demographics_pie_chart_view_flag
+				}
+			}
+			state_demographics_religion_details_pie_chart_icon_visible = {
+				ROOT = {
+					has_country_flag = eoanbr_state_demographics_pie_chart_view_flag
+				}
+				check_variable = {
+					pops_religion_array^num = 0
+				}
+			}
+			state_demographics_religion_details_pie_chart_icon_overlay_visible = {
+				ROOT = {
+					has_country_flag = eoanbr_state_demographics_pie_chart_view_flag
+				}
+			}
+			state_demographics_toggle_button_click_enabled = {
+				always = no
+			}
+		}
+
+		properties = {
+			state_demographics_pop_details_majority_icon = {
+				image = "GFX_[?FROM.pops_pop_array^0.GetTokenKey]"
+			}
+			state_demographics_culture_details_majority_icon = {
+				image = "GFX_[?FROM.pops_culture_array^0.GetTokenKey]"
+			}
+			state_demographics_religion_details_majority_icon = {
+				image = "GFX_[?FROM.pops_religion_array^0.GetTokenKey]"
+			}
+		}
+
+		effects = {
+			state_demographics_toggle_button_click = {
+				ROOT = {
+					if = {
+						limit = {
+							has_country_flag = eoanbr_state_demographics_pie_chart_view_flag
+						}
+						clr_country_flag = eoanbr_state_demographics_pie_chart_view_flag
+					}
+					else = {
+						set_country_flag = eoanbr_state_demographics_pie_chart_view_flag
+					}
+				}
+			}
+
+			state_demographics_pop_details_button_click = {
+				#recalc_state_pop_type
+
+				ROOT = {
+					clr_country_flag = eoanbr_state_culture_details_menu_flag
+					clr_country_flag = eoanbr_state_religion_details_menu_flag
+					if = {
+						limit = {
+							has_country_flag = eoanbr_state_pop_details_menu_flag
+						}
+						clr_country_flag = eoanbr_state_pop_details_menu_flag
+					}
+					else = {
+						PREV = { eoanbr_demographic_state_update = yes }
+						set_country_flag = eoanbr_state_pop_details_menu_flag
+					}
+				}
+			}
+
+			state_demographics_culture_details_button_click = {
+				#recalc_state_culture_type
+
+				ROOT = {
+					clr_country_flag = eoanbr_state_pop_details_menu_flag
+					clr_country_flag = eoanbr_state_religion_details_menu_flag
+					if = {
+						limit = {
+							has_country_flag = eoanbr_state_culture_details_menu_flag
+						}
+						clr_country_flag = eoanbr_state_culture_details_menu_flag
+					}
+					else = {
+						PREV = { eoanbr_demographic_state_update = yes }
+						set_country_flag = eoanbr_state_culture_details_menu_flag
+					}
+				}
+			}
+			state_demographics_religion_details_button_click = {
+				#recalc_state_religion_type
+
+				ROOT = {
+					clr_country_flag = eoanbr_state_pop_details_menu_flag
+					clr_country_flag = eoanbr_state_culture_details_menu_flag
+					if = {
+						limit = {
+							has_country_flag = eoanbr_state_religion_details_menu_flag
+						}
+						clr_country_flag = eoanbr_state_religion_details_menu_flag
+					}
+					else = {
+						PREV = { eoanbr_demographic_state_update = yes }
+						set_country_flag = eoanbr_state_religion_details_menu_flag
+					}
+				}
+			}
+		}
+
+	}
+	state_culture_summary_gui = {
+		window_name = "state_culture_details_container"
+		parent_window_token = selected_state_view
+		context_type = selected_state_context
+
+		visible = {
+			ROOT = {
+				has_country_flag = eoanbr_state_culture_details_menu_flag
+			}
+		}
+
+		triggers = {
+			state_culture_default_bg_visible = {
+				OWNER = {
+					NOT = {
+						is_in_array = {
+							array = pops_marginalized_culture_array
+							value = v
+						}
+						is_in_array = {
+							array = pops_promoted_culture_array
+							value = v
+						}
+						is_in_array = {
+							array = pops_primary_culture_array
+							value = v
+						}
+					}
+				}
+			}
+			state_culture_marginalized_bg_visible = {
+				OWNER = {
+					is_in_array = {
+						array = pops_marginalized_culture_array
+						value = v
+					}
+				}
+			}
+			state_culture_promoted_bg_visible = {
+				OWNER = {
+					is_in_array = {
+						array = pops_promoted_culture_array
+						value = v
+					}
+				}
+			}
+			state_culture_primary_bg_visible = {
+				OWNER = {
+					is_in_array = {
+						array = pops_primary_culture_array
+						value = v
+					}
+				}
+			}
+			state_culture_promote_button_visible = {
+				OWNER = {
+					NOT = {
+						OR = {
+							is_in_array = {
+								array = pops_primary_culture_array
+								value = v
+							}
+							is_in_array = {
+								array = pops_promoted_culture_array
+								value = v
+							}
+						}
+					}
+				}
+			}
+			state_culture_demote_button_visible = {
+				OWNER = {
+					NOT = {
+						OR = {
+							is_in_array = {
+								array = pops_primary_culture_array
+								value = v
+							}
+							is_in_array = {
+								array = pops_marginalized_culture_array
+								value = v
+							}
+						}
+					}
+				}
+			}
+		}
+
+		properties = {
+			state_culture_icon = {
+				image = "GFX_[?v.GetTokenKey]"
+			}
+		}
+
+		effects = {
+			# national_culture_click = {
+				# set_temp_variable = { show = 1 }
+				# subtract_from_temp_variable = { show = show_national_culture_list }
+				# set_variable = { show_national_culture_list = show }
+			# }
+			close_button_click = {
+				ROOT = {
+					clr_country_flag = eoanbr_state_culture_details_menu_flag
+				}
+			}
+		}
+
+		dynamic_lists = {
+			state_culture_list = {
+				array = pops_culture_array
+				entry_container = state_culture_entry
+			}
+		}
+
+		ai_enabled = {
+			always = no
+		}
+	}
+	state_religion_summary_gui = {
+		window_name = "state_religion_details_container"
+		parent_window_token = selected_state_view
+		context_type = selected_state_context
+
+		visible = {
+			ROOT = {
+				has_country_flag = eoanbr_state_religion_details_menu_flag
+			}
+		}
+
+		triggers = {
+			state_religion_default_bg_visible = {
+				OWNER = {
+					NOT = {
+						is_in_array = {
+							array = pops_marginalized_religion_array
+							value = v
+						}
+						is_in_array = {
+							array = pops_promoted_religion_array
+							value = v
+						}
+						is_in_array = {
+							array = pops_primary_religion_array
+							value = v
+						}
+					}
+				}
+			}
+			state_religion_marginalized_bg_visible = {
+				OWNER = {
+					is_in_array = {
+						array = pops_marginalized_religion_array
+						value = v
+					}
+				}
+			}
+			state_religion_promoted_bg_visible = {
+				OWNER = {
+					is_in_array = {
+						array = pops_promoted_religion_array
+						value = v
+					}
+				}
+			}
+			state_religion_primary_bg_visible = {
+				OWNER = {
+					is_in_array = {
+						array = pops_primary_religion_array
+						value = v
+					}
+				}
+			}
+			state_religion_promote_button_visible = {
+				OWNER = {
+					NOT = {
+						OR = {
+							is_in_array = {
+								array = pops_primary_religion_array
+								value = v
+							}
+							is_in_array = {
+								array = pops_promoted_religion_array
+								value = v
+							}
+						}
+					}
+				}
+			}
+			state_religion_demote_button_visible = {
+				OWNER = {
+					NOT = {
+						OR = {
+							is_in_array = {
+								array = pops_primary_religion_array
+								value = v
+							}
+							is_in_array = {
+								array = pops_marginalized_religion_array
+								value = v
+							}
+						}
+					}
+				}
+			}
+		}
+
+		properties = {
+			state_religion_icon = {
+				image = "GFX_[?v.GetTokenKey]"
+			}
+		}
+
+		effects = {
+			# national_religion_click = {
+				# set_temp_variable = { show = 1 }
+				# subtract_from_temp_variable = { show = show_national_religion_list }
+				# set_variable = { show_national_religion_list = show }
+			# }
+			close_button_click = {
+				ROOT = {
+					clr_country_flag = eoanbr_state_religion_details_menu_flag
+				}
+			}
+		}
+
+		dynamic_lists = {
+			state_religion_list = {
+				array = pops_religion_array
+				entry_container = state_religion_entry
+			}
+		}
+
+		ai_enabled = {
+			always = no
+		}
+	}
+#
+#Country
+	country_politics_tab_management_buttons_gui = {
+		window_name = "eoanbr_country_politics_tab_management_buttons_container"
+		context_type = player_context
+		parent_window_token = politics_tab
+
+		triggers = {
+			show_politics_button_click_enabled = {
+				always = no
+			}
+		}
+
+		effects = {
+			show_politics_button_click = {
+				if = {
+					limit = { has_country_flag = eoanbr_country_internal_politics_menu_flag }
+					clr_country_flag = eoanbr_country_internal_politics_menu_flag
+				}
+				else = {
+					set_country_flag = eoanbr_country_internal_politics_menu_flag
+				}
+			}
+			show_demographics_button_click = {
+				if = {
+					limit = { has_country_flag = eoanbr_country_demographics_menu_flag }
+					clr_country_flag = eoanbr_country_demographics_menu_flag
+				}
+				else = {
+					set_country_flag = eoanbr_country_demographics_menu_flag
+					eoanbr_pops_country_update = yes
+				}
+			}
+		}
+
+	}
+	country_demographics_summary_gui = {
+		window_name = "country_demographics_summary_container"
+
+		context_type = player_context
+
+		visible = {
+			has_country_flag = eoanbr_country_demographics_menu_flag
+		}
+
+		triggers = {
+			country_demographics_culture_list_container_visible = {
+				NOT = { has_country_flag = eoanbr_country_demographics_religion_menu_flag }
+			}
+			country_demographics_religion_list_container_visible = {
+				has_country_flag = eoanbr_country_demographics_religion_menu_flag
+			}
+		}
+
+		properties = {
+			manage_demographics_culture_icon = {
+				image = "GFX_[?pops_primary_culture_array^0.GetTokenKey]"
+			}
+			manage_demographics_religion_icon = {
+				image = "GFX_[?pops_primary_religion_array^0.GetTokenKey]"
+			}
+			country_culture_icon = {
+				image = "GFX_[?v.GetTokenKey]"
+			}
+		}
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = eoanbr_country_demographics_menu_flag
+			}
+			manage_demographics_culture_button_click = {
+				clr_country_flag = eoanbr_country_demographics_religion_menu_flag
+			}
+			manage_demographics_religion_button_click = {
+				set_country_flag = eoanbr_country_demographics_religion_menu_flag
+			}
+		}
+	}
+	country_culture_summary_gui = {
+		window_name = "country_demographics_culture_list_container"
+		context_type = player_context
+		parent_window_name = country_demographics_summary_container
+
+		visible = {
+			NOT = { has_country_flag  = eoanbr_country_demographics_religion_menu_flag }
+		}
+
+		triggers = {
+			country_culture_default_bg_visible = {
+				NOT = {
+					is_in_array = {
+						array = pops_marginalized_culture_array
+						value = v
+					}
+					is_in_array = {
+						array = pops_promoted_culture_array
+						value = v
+					}
+					is_in_array = {
+						array = pops_primary_culture_array
+						value = v
+					}
+				}
+			}
+			country_culture_marginalized_bg_visible = {
+				is_in_array = {
+					array = pops_marginalized_culture_array
+					value = v
+				}
+			}
+			country_culture_promoted_bg_visible = {
+				is_in_array = {
+					array = pops_promoted_culture_array
+					value = v
+				}
+			}
+			country_culture_primary_bg_visible = {
+				is_in_array = {
+					array = pops_primary_culture_array
+					value = v
+				}
+			}
+		}
+
+		properties = {
+			country_culture_icon = {
+				image = "GFX_[?v.GetTokenKey]"
+			}
+		}
+
+		effects = {
+
+		}
+		dynamic_lists = {
+			country_culture_list = {
+				array = pops_culture_array
+				entry_container = country_culture_entry
+			}
+		}
+	}
+	country_religion_summary_gui = {
+		window_name = "country_demographics_religion_list_container"
+		context_type = player_context
+		parent_window_name = country_demographics_summary_container
+
+		visible = {
+			has_country_flag  = eoanbr_country_demographics_religion_menu_flag
+		}
+
+		triggers = {
+			country_religion_default_bg_visible = {
+				NOT = {
+					is_in_array = {
+						array = pops_marginalized_religion_array
+						value = v
+					}
+					is_in_array = {
+						array = pops_promoted_religion_array
+						value = v
+					}
+					is_in_array = {
+						array = pops_primary_religion_array
+						value = v
+					}
+				}
+			}
+			country_religion_marginalized_bg_visible = {
+				is_in_array = {
+					array = pops_marginalized_religion_array
+					value = v
+				}
+			}
+			country_religion_promoted_bg_visible = {
+				is_in_array = {
+					array = pops_promoted_religion_array
+					value = v
+				}
+			}
+			country_religion_primary_bg_visible = {
+				is_in_array = {
+					array = pops_primary_religion_array
+					value = v
+				}
+			}
+		}
+
+		properties = {
+			country_religion_icon = {
+				image = "GFX_[?v.GetTokenKey]"
+			}
+		}
+
+		effects = {
+
+		}
+		dynamic_lists = {
+			country_religion_list = {
+				array = pops_religion_array
+				entry_container = country_religion_entry
+			}
+		}
+	}
+}
