@@ -1,0 +1,27 @@
+#example of demographics history setup
+demographics_history_setup = {
+	1 = { #Corsica
+		# Culture
+			add_to_array = { pops_culture_array = token:culture_corsican }
+			set_variable = { percentage@token:culture_corsican = 0.70 }
+			add_to_array = { pops_culture_array = token:culture_francien }
+			set_variable = { percentage@token:culture_francien = 0.29 }
+			add_to_array = { pops_culture_array = token:culture_greek }
+			set_variable = { percentage@token:culture_greek = 0.01 }
+		# Religion
+			add_to_array = { pops_religion_array = token:religion_catholic }
+			set_variable = { percentage@token:religion_catholic = 0.99 }
+			add_to_array = { pops_religion_array = token:religion_orthodox }
+			set_variable = { percentage@token:religion_orthodox = 0.01 }
+		#
+	}
+	GEO = { #Georgia
+		#Culture
+			add_to_array = { pops_primary_culture_array = token:culture_abkhaz }
+			add_to_array = { pops_promoted_culture_array = token:culture_kartvelian }
+		#
+		#Religion
+			add_to_array = { pops_primary_religion_array = token:religion_orthodox }
+		#
+	}
+}

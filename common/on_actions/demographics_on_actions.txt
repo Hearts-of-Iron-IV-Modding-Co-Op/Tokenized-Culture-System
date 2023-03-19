@@ -1,0 +1,8 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			demographics_constants_setup = yes
+			demographics_history_setup = yes
+		}
+	}
+}

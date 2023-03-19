@@ -1,0 +1,8444 @@
+#Population
+	#National
+		defined_text = {
+			name = GetNationalPopulation
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gnp = pops
+					}
+					check_variable = {
+						var = gnp
+						value = 999999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = gnp
+						value = 1000000
+					}
+				}
+				localization_key = "[?gnp|2]B"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gnp = pops
+					}
+					check_variable = {
+						var = gnp
+						value = 99999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = gnp
+						value = 1000
+					}
+				}
+				localization_key = "[?gnp|0]M"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gnp = pops
+					}
+					check_variable = {
+						var = gnp
+						value = 9999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = gnp
+						value = 1000
+					}
+				}
+				localization_key = "[?gnp|1]M"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gnp = pops
+					}
+					check_variable = {
+						var = gnp
+						value = 999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = gnp
+						value = 1000
+					}
+				}
+				localization_key = "[?gnp|2]M"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gnp = pops
+					}
+					check_variable = {
+						var = gnp
+						value = 99.999
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?gnp|0]k"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gnp = pops
+					}
+					check_variable = {
+						var = gnp
+						value = 9.999
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?gnp|1]k"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gnp = pops
+					}
+					check_variable = {
+						var = gnp
+						value = 0.999
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?gnp|2]k"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gnp = pops
+					}
+					multiply_temp_variable = {
+						var = gnp
+						value = 1000
+					}
+				}
+				localization_key = "[?gnp|0]"
+			}
+		}
+		defined_text = {
+			name = GetNationalPrecisePopulation
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = gnpp
+						value = pops
+					}
+					check_variable = {
+						var = gnpp
+						value = 1000
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?gnpp|3]k"
+			}
+			text = {
+				trigger = {
+					multiply_temp_variable = {
+						var = gnpp
+						value = 1000
+					}
+				}
+				localization_key = "[?gnpp|0]"
+			}
+		}
+		defined_text = {
+			name = GetNationalCorePopulation
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gncp = core_population_k
+					}
+					check_variable = {
+						var = gncp
+						value = 999999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = gncp
+						value = 1000000
+					}
+				}
+				localization_key = "[?gncp|2]B"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gncp = core_population_k
+					}
+					check_variable = {
+						var = gncp
+						value = 99999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = gncp
+						value = 1000
+					}
+				}
+				localization_key = "[?gncp|0]M"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gncp = core_population_k
+					}
+					check_variable = {
+						var = gncp
+						value = 9999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = gncp
+						value = 1000
+					}
+				}
+				localization_key = "[?gncp|1]M"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gncp = core_population_k
+					}
+					check_variable = {
+						var = gncp
+						value = 999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = gncp
+						value = 1000
+					}
+				}
+				localization_key = "[?gncp|2]M"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gncp = core_population_k
+					}
+					check_variable = {
+						var = gncp
+						value = 99.999
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?gncp|0]k"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gncp = core_population_k
+					}
+					check_variable = {
+						var = gncp
+						value = 9.999
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?gncp|1]k"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gncp = core_population_k
+					}
+					check_variable = {
+						var = gncp
+						value = 0.999
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?gncp|2]k"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gncp = core_population_k
+					}
+					multiply_temp_variable = {
+						var = gncp
+						value = 1000
+					}
+				}
+				localization_key = "[?gncp|0]"
+			}
+		}
+		defined_text = {
+			name = GetNationalPreciseCorePopulation
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = gncpcp
+						value = core_population_k
+					}
+					check_variable = {
+						var = gncpcp
+						value = 100000
+					}
+				}
+				localization_key = "[?gncpcp|3]k"
+			}
+			text = {
+				trigger = {
+					multiply_temp_variable = {
+						var = gncpcp
+						value = 1000
+					}
+				}
+				localization_key = "[?gncpcp|0]"
+			}
+		}
+	#
+	#State
+		defined_text = {
+			name = GetStatePopulation
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gsp = state_population_k
+					}
+					check_variable = {
+						var = gsp
+						value = 999999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = gsp
+						value = 1000000
+					}
+				}
+				localization_key = "[?gsp|2]B"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gsp = state_population_k
+					}
+					check_variable = {
+						var = gsp
+						value = 99999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = gsp
+						value = 1000
+					}
+				}
+				localization_key = "[?gsp|0]M"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gsp = state_population_k
+					}
+					check_variable = {
+						var = gsp
+						value = 9999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = gsp
+						value = 1000
+					}
+				}
+				localization_key = "[?gsp|1]M"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gsp = state_population_k
+					}
+					check_variable = {
+						var = gsp
+						value = 999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = gsp
+						value = 1000
+					}
+				}
+				localization_key = "[?gsp|2]M"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gsp = state_population_k
+					}
+					check_variable = {
+						var = gsp
+						value = 99.999
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?gsp|0]k"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gsp = state_population_k
+					}
+					check_variable = {
+						var = gsp
+						value = 9.999
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?gsp|1]k"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gsp = state_population_k
+					}
+					check_variable = {
+						var = gsp
+						value = 0.999
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?gsp|2]k"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gsp = state_population_k
+					}
+					multiply_temp_variable = {
+						var = gsp
+						value = 1000
+					}
+				}
+				localization_key = "[?gsp|0]"
+			}
+		}
+		defined_text = {
+			name = GetStatePrecisePopulation
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = gspp
+						value = state_population_k
+					}
+					check_variable = {
+						var = gspp
+						value = 1000
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?gspp|3]k"
+			}
+			text = {
+				trigger = {
+					multiply_temp_variable = {
+						var = gspp
+						value = 1000
+					}
+				}
+				localization_key = "[?gspp|0]"
+			}
+		}
+		#Culture
+			defined_text = {
+				name = GetStateCultureList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = pops_culture_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = state_culture_list
+				}
+			}
+			defined_text = {
+				name = RenderStateCultureList
+				text = {
+					trigger = {
+						check_variable = {
+							var = param_temp_array^num
+							value = 0
+							compare = greater_than
+						}
+						#Renderer Settings
+							set_temp_variable = {
+								var = param_cutoff
+								value = 10
+							}
+							set_temp_variable = {
+								var = culture_iter
+								value = -1
+							}
+						#
+					}
+					localization_key = "[RenderStateCultureListInner]"
+				}
+			}
+			defined_text = {
+				name = RenderStateCultureListInner
+				text = {
+					trigger = {
+						add_to_temp_variable = {
+							var = culture_iter
+							value = 1
+						}
+						check_variable = {
+							var = culture_iter
+							value = param_temp_array^num
+							compare = less_than
+						}
+						check_variable = {
+							var = culture_iter
+							value = param_cutoff
+							compare = less_than
+						}
+						set_temp_variable = {
+							var = culture_temp
+							value = param_temp_array^culture_iter
+						}
+					}
+					localization_key = culture_list_culture_percentage_tt
+				}
+			}
+		#
+		#Religion
+			defined_text = {
+				name = GetStateReligionList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = pops_religion_array
+								value = religion_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = religion_temp
+								}
+							}
+						#
+					}
+					localization_key = state_religion_list
+				}
+			}
+			defined_text = {
+				name = RenderStateReligionList
+				text = {
+					trigger = {
+						check_variable = {
+							var = param_temp_array^num
+							value = 0
+							compare = greater_than
+						}
+						#Renderer Settings
+							set_temp_variable = {
+								var = param_cutoff
+								value = 10
+							}
+							set_temp_variable = {
+								var = religion_iter
+								value = -1
+							}
+						#
+					}
+					localization_key = "[RenderStateReligionListInner]"
+				}
+			}
+			defined_text = {
+				name = RenderStateReligionListInner
+				text = {
+					trigger = {
+						add_to_temp_variable = {
+							var = religion_iter
+							value = 1
+						}
+						check_variable = {
+							var = religion_iter
+							value = param_temp_array^num
+							compare = less_than
+						}
+						check_variable = {
+							var = religion_iter
+							value = param_cutoff
+							compare = less_than
+						}
+						set_temp_variable = {
+							var = religion_temp
+							value = param_temp_array^religion_iter
+						}
+					}
+					localization_key = religion_list_religion_percentage_tt
+				}
+			}
+		#
+	#
+#
+#Culture
+	#Base
+		defined_text = {
+			name = GetCultureName
+			text = {
+				localization_key = "[?v.GetTokenLocalizedKey]"
+			}
+		}
+	#
+	#Group
+		defined_text = {
+			name = GetCultureGroupName
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gcgn = global.group@var:v
+					}
+				}
+				localization_key = "[?gcgn.GetTokenLocalizedKey]"
+			}
+		}
+		defined_text = {
+			name = GetCultureGroupList
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_germanic_nordic
+						compare = equals
+					}
+				}
+				localization_key = "[GetGermanicNordicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_germanic_high
+						compare = equals
+					}
+				}
+				localization_key = "[GetGermanicHighCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_germanic_low
+						compare = equals
+					}
+				}
+				localization_key = "[GetGermanicLowCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_germanic_dutch
+						compare = equals
+					}
+				}
+				localization_key = "[GetGermanicDutchCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_germanic_brittanic
+						compare = equals
+					}
+				}
+				localization_key = "[GetGermanicBrittanicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_germanic_outer
+						compare = equals
+					}
+				}
+				localization_key = "[GetGermanicOuterCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_germanic_brittanic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetGermanicBrittanicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_germanic_other_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetGermanicOtherColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_baltic_eastern
+						compare = equals
+					}
+				}
+				localization_key = "[GetBalticEasternCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_baltic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetBalticColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_celtic_brittanic
+						compare = equals
+					}
+				}
+				localization_key = "[GetCelticBrittanicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_celtic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetCelticColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_basque_basque
+						compare = equals
+					}
+				}
+				localization_key = "[GetBasqueBasqueCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_basque_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetBasqueColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_romance_portuguese
+						compare = equals
+					}
+				}
+				localization_key = "[GetRomancePortugueseCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_romance_spanish
+						compare = equals
+					}
+				}
+				localization_key = "[GetRomanceSpanishCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_romance_french
+						compare = equals
+					}
+				}
+				localization_key = "[GetRomanceFrenchCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_romance_italian
+						compare = equals
+					}
+				}
+				localization_key = "[GetRomanceItalianCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_romance_eastern
+						compare = equals
+					}
+				}
+				localization_key = "[GetRomanceEasternCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_romance_portuguese_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetRomancePortugueseColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_romance_spanish_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetRomanceSpanishColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_romance_french_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetRomanceFrenchColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_romance_other_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetRomanceOtherColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_hellenic_ionic_attic
+						compare = equals
+					}
+				}
+				localization_key = "[GetHellenicIonicAtticCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_hellenic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetHellenicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_illyrian_albanian
+						compare = equals
+					}
+				}
+				localization_key = "[GetIllyrianAlbanianCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_illyrian_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetIllyrianColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_slavic_southern
+						compare = equals
+					}
+				}
+				localization_key = "[GetSlavicSouthernCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_slavic_western
+						compare = equals
+					}
+				}
+				localization_key = "[GetSlavicWesternCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_slavic_eastern
+						compare = equals
+					}
+				}
+				localization_key = "[GetSlavicEasternCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_slavic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetSlavicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_uralic_finnic
+						compare = equals
+					}
+				}
+				localization_key = "[GetUralicFinnicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_uralic_ugric
+						compare = equals
+					}
+				}
+				localization_key = "[GetUralicUgricCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_uralic_permic
+						compare = equals
+					}
+				}
+				localization_key = "[GetUralicPermicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_uralic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetUralicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_caucasian_northern
+						compare = equals
+					}
+				}
+				localization_key = "[GetCaucasianNorthernCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_caucasian_southern
+						compare = equals
+					}
+				}
+				localization_key = "[GetCaucasianSouthernCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_caucasian_eastern
+						compare = equals
+					}
+				}
+				localization_key = "[GetCaucasianEasternCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_caucasian_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetCaucasianColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_armenic_armenic
+						compare = equals
+					}
+				}
+				localization_key = "[GetArmenicArmenicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_armenic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetArmenicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_iranian_western
+						compare = equals
+					}
+				}
+				localization_key = "[GetIranianWesternCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_iranian_central
+						compare = equals
+					}
+				}
+				localization_key = "[GetIranianCentralCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_iranian_eastern
+						compare = equals
+					}
+				}
+				localization_key = "[GetIranianEasternCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_iranian_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetIranianColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_turkic_oghuz
+						compare = equals
+					}
+				}
+				localization_key = "[GetTurkicOghuzCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_turkic_kipchak
+						compare = equals
+					}
+				}
+				localization_key = "[GetTurkicKipchakCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_turkic_karlak
+						compare = equals
+					}
+				}
+				localization_key = "[GetTurkicKarlakCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_turkic_altaic
+						compare = equals
+					}
+				}
+				localization_key = "[GetTurkicAltaicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_turkic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetTurkicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_semetic_jewish
+						compare = equals
+					}
+				}
+				localization_key = "[GetSemeticJewishCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_semetic_maghreb
+						compare = equals
+					}
+				}
+				localization_key = "[GetSemeticMaghrebCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_semetic_mashriq
+						compare = equals
+					}
+				}
+				localization_key = "[GetSemeticMashriqCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_semetic_azraq
+						compare = equals
+					}
+				}
+				localization_key = "[GetSemeticAzraqCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_semetic_ethiopic
+						compare = equals
+					}
+				}
+				localization_key = "[GetSemeticEthiopicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_semetic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetSemeticColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_aryan_indic
+						compare = equals
+					}
+				}
+				localization_key = "[GetAryanIndicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_aryan_hindi
+						compare = equals
+					}
+				}
+				localization_key = "[GetAryanHindiCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_aryan_sahyadri
+						compare = equals
+					}
+				}
+				localization_key = "[GetAryanSahyadriCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_aryan_magadhan_prakit
+						compare = equals
+					}
+				}
+				localization_key = "[GetAryanMagadhanPrakitCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_aryan_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetAryanColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_dravidian_southern
+						compare = equals
+					}
+				}
+				localization_key = "[GetDravidianSouthernCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_dravidian_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetDravidianColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_sino_himilayan_bodic
+						compare = equals
+					}
+				}
+				localization_key = "[GetSinoHimilayanBodicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_sino_himilayan_brahmaputranic
+						compare = equals
+					}
+				}
+				localization_key = "[GetSinoHimilayanBrahmaputranicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_sino_himilayan_burmeic
+						compare = equals
+					}
+				}
+				localization_key = "[GetSinoHimilayanBurmeicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_sino_himilayan_south_sinitic
+						compare = equals
+					}
+				}
+				localization_key = "[GetSinoHimilayanSouthSiniticCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_sino_himilayan_north_sinitic
+						compare = equals
+					}
+				}
+				localization_key = "[GetSinoHimilayanNorthSiniticCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_sino_himilayan_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetSinoHimilayanColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_mongolic_mongol
+						compare = equals
+					}
+				}
+				localization_key = "[GetMongolicMongolCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_mongolic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetMongolicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_tungusic_tungusic
+						compare = equals
+					}
+				}
+				localization_key = "[GetTungusicTungusicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_tungusic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetTungusicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_kamchukotic_kamchukchee
+						compare = equals
+					}
+				}
+				localization_key = "[GetKamchukoticKamchukeeCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_kamchukotic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetKamchukoticColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_ainuic_ainu
+						compare = equals
+					}
+				}
+				localization_key = "[GetAinuicAinuCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_ainuic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetAinuicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_koreanic_korean
+						compare = equals
+					}
+				}
+				localization_key = "[GetKoreanicKoreanCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_koreanic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetKoreanicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_japonic_japanese
+						compare = equals
+					}
+				}
+				localization_key = "[GetJaponicJapaneseCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_japonic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetJaponicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_daic_tai
+						compare = equals
+					}
+				}
+				localization_key = "[GetDaicTaiCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_daic_kadic
+						compare = equals
+					}
+				}
+				localization_key = "[GetDaicKadicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_daic_hmong
+						compare = equals
+					}
+				}
+				localization_key = "[GetDaicHmongCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_daic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetDaicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_austro_asiastic_khasi
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustroAsiasticKhasiCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_austro_asiastic_mon_khmer
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustroAsiasticMonKhmerCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_austro_asiastic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustroAsiasticColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_austronesian_formosan
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustronesianFormosanCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_austronesian_dhivehian
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustronesianDhivehianCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_austronesian_malayo_champaic
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustronesianMalayoChampaicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_austronesian_filipino
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustronesianFilipinoCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_austronesian_moulaccan
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustronesianMoulaccanCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_austronesian_oceanic
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustronesianOceanicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_austronesian_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustronesianColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_papuan_papuan
+						compare = equals
+					}
+				}
+				localization_key = "[GetPapuanPapuanCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_papuan_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetPapuanColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_pama_nyungan_pama
+						compare = equals
+					}
+				}
+				localization_key = "[GetPamaNyunganPamaCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_pama_nyungan_nyungan
+						compare = equals
+					}
+				}
+				localization_key = "[GetPamaNyunganNyunganCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_papuan_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetPamaNyunganColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_native_american_northern
+						compare = equals
+					}
+				}
+				localization_key = "[GetNativeAmericanNorthernCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_native_american_central
+						compare = equals
+					}
+				}
+				localization_key = "[GetNativeAmericanCentralCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_native_american_southern
+						compare = equals
+					}
+				}
+				localization_key = "[GetNativeAmericanSouthernCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_native_american_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetNativeAmericanColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_nilo_saharan_nile
+						compare = equals
+					}
+				}
+				localization_key = "[GetNiloSaharanNileCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_nilo_saharan_saharan
+						compare = equals
+					}
+				}
+				localization_key = "[GetNiloSaharanSaharanCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_nilo_saharan_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetNiloSaharanColonialGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_niger_congo_atlantic
+						compare = equals
+					}
+				}
+				localization_key = "[GetNigerCongoAtlanticCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_niger_congo_mande
+						compare = equals
+					}
+				}
+				localization_key = "[GetNigerCongoMandeCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_niger_congo_north_volta
+						compare = equals
+					}
+				}
+				localization_key = "[GetNigerCongoNorthVoltaCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_niger_congo_south_volta
+						compare = equals
+					}
+				}
+				localization_key = "[GetNigerCongoSouthVoltaCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_niger_congo_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetNigerCongoColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_bantu_northwest
+						compare = equals
+					}
+				}
+				localization_key = "[GetBantuNorthwestCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_bantu_central
+						compare = equals
+					}
+				}
+				localization_key = "[GetBantuCentralCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_bantu_southwest
+						compare = equals
+					}
+				}
+				localization_key = "[GetBantuSouthwestCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_bantu_savannic
+						compare = equals
+					}
+				}
+				localization_key = "[GetBantuSavannicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_bantu_northeast
+						compare = equals
+					}
+				}
+				localization_key = "[GetBantuNortheastCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_bantu_southeast
+						compare = equals
+					}
+				}
+				localization_key = "[GetBantuSoutheastCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_bantu_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetBantuColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_khosian_khosian
+						compare = equals
+					}
+				}
+				localization_key = "[GetKhosianKhosianCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.group@var:v
+						value = token:culture_group_khosian_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetKhosianColonialCultureGroupList]"
+			}
+		}
+	#
+	#Family
+		defined_text = {
+			name = GetCultureFamilyName
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gcfn = global.family@var:v
+					}
+				}
+				localization_key = "[?gcfn.GetTokenLocalizedKey]"
+			}
+		}
+		defined_text = {
+			name = GetCultureFamilyList
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_germanic
+						compare = equals
+					}
+				}
+				localization_key = "[GetGermanicCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_baltic
+						compare = equals
+					}
+				}
+				localization_key = "[GetBalticCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_celtic
+						compare = equals
+					}
+				}
+				localization_key = "[GetCelticCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_basque
+						compare = equals
+					}
+				}
+				localization_key = "[GetBasqueCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_romance
+						compare = equals
+					}
+				}
+				localization_key = "[GetRomanceCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_hellenic
+						compare = equals
+					}
+				}
+				localization_key = "[GeHellenicCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_illyrian
+						compare = equals
+					}
+				}
+				localization_key = "[GetIllyrianCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_slavic
+						compare = equals
+					}
+				}
+				localization_key = "[GetSlavicCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_uralic
+						compare = equals
+					}
+				}
+				localization_key = "[GetUralicCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_caucasian
+						compare = equals
+					}
+				}
+				localization_key = "[GetCaucasianCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_armenic
+						compare = equals
+					}
+				}
+				localization_key = "[GetArmenicCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_iranian
+						compare = equals
+					}
+				}
+				localization_key = "[GetIranianCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_turkic
+						compare = equals
+					}
+				}
+				localization_key = "[GetTurkicCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_semetic
+						compare = equals
+					}
+				}
+				localization_key = "[GetSemeticCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_aryan
+						compare = equals
+					}
+				}
+				localization_key = "[GetAryanCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_dravidian
+						compare = equals
+					}
+				}
+				localization_key = "[GetDravidianCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_sino_himilayan
+						compare = equals
+					}
+				}
+				localization_key = "[GetSinoHimilayanCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_mongolic
+						compare = equals
+					}
+				}
+				localization_key = "[GetMongolicCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_tungusic
+						compare = equals
+					}
+				}
+				localization_key = "[GetTungusicCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_kamchukotic
+						compare = equals
+					}
+				}
+				localization_key = "[GetKamchukoticCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_ainuic
+						compare = equals
+					}
+				}
+				localization_key = "[GetAinuicCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_koreanic
+						compare = equals
+					}
+				}
+				localization_key = "[GetKoreanicCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_japonic
+						compare = equals
+					}
+				}
+				localization_key = "[GetJaponicCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_daic
+						compare = equals
+					}
+				}
+				localization_key = "[GetDaicCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_austro_asiastic
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustroAsiasticCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_austronesian
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustronesianCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_papuan
+						compare = equals
+					}
+				}
+				localization_key = "[GetPapuancCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_pama_nyungan
+						compare = equals
+					}
+				}
+				localization_key = "[GetPamaNyunganCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_native_american
+						compare = equals
+					}
+				}
+				localization_key = "[GetNativeAmericanCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_nilo_saharan
+						compare = equals
+					}
+				}
+				localization_key = "[GetNiloSaharanCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_niger_congo
+						compare = equals
+					}
+				}
+				localization_key = "[GetNigerCongoCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_bantu
+						compare = equals
+					}
+				}
+				localization_key = "[GetBantuCultureFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:culture_family_khosian
+						compare = equals
+					}
+				}
+				localization_key = "[GetKhosianCultureFamilyList]"
+			}
+		}
+	#
+	#Population
+		defined_text = {
+			name = GetCulturePopulation
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gcp = population_k@var:v
+					}
+					check_variable = {
+						var = gcp
+						value = 999999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = gcp
+						value = 1000000
+					}
+				}
+				localization_key = "[?gcp|2]B"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gcp = population_k@var:v
+					}
+					check_variable = {
+						var = gcp
+						value = 99999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = gcp
+						value = 1000
+					}
+				}
+				localization_key = "[?gcp|0]M"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gcp = population_k@var:v
+					}
+					check_variable = {
+						var = gcp
+						value = 9999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = gcp
+						value = 1000
+					}
+				}
+				localization_key = "[?gcp|1]M"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gcp = population_k@var:v
+					}
+					check_variable = {
+						var = gcp
+						value = 999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = gcp
+						value = 1000
+					}
+				}
+				localization_key = "[?gcp|2]M"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gcp = population_k@var:v
+					}
+					check_variable = {
+						var = gcp
+						value = 99.999
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?gcp|0]k"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gcp = population_k@var:v
+					}
+					check_variable = {
+						var = gcp
+						value = 9.999
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?gcp|1]k"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gcp = population_k@var:v
+					}
+					check_variable = {
+						var = gcp
+						value = 0.999
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?gcp|2]k"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gcp = population_k@var:v
+					}
+					multiply_temp_variable = {
+						var = gcp
+						value = 1000
+					}
+				}
+				localization_key = "[?gcp|0]"
+			}
+		}
+		defined_text = {
+			name = GetCulturePrecisePopulation
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = gcpp
+						value = population_k@var:v
+					}
+					check_variable = {
+						var = gcpp
+						value = 100000
+					}
+				}
+				localization_key = "[?gcpp|3]k"
+			}
+			text = {
+				trigger = {
+					multiply_temp_variable = {
+						var = gcpp
+						value = 1000
+					}
+				}
+				localization_key = "[?gcpp|0]"
+			}
+		}
+		defined_text = {
+			name = GetCulturePercentage
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gcpe = percentage@var:v
+					}
+				}
+				localization_key = "[?gcpe|0%]"
+			}
+		}
+	#
+	#Acceptance
+		defined_text = {
+			name = GetCultureAcceptance
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_promoted_culture = yes
+				}
+				localization_key = "culture_type_promoted"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_marginalized_culture = yes
+				}
+				localization_key = "culture_type_marginalized"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_primary_culture = yes
+				}
+				localization_key = "culture_type_primary"
+			}
+			text = {
+				localization_key = "culture_type_normal"
+			}
+		}
+		defined_text = {
+			name = GetCultureOwnerAcceptance
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_owner_promoted_culture = yes
+				}
+				localization_key = "culture_type_promoted"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_owner_marginalized_culture = yes
+				}
+				localization_key = "culture_type_marginalized"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_owner_primary_culture = yes
+				}
+				localization_key = "culture_type_primary"
+			}
+			text = {
+				localization_key = "culture_type_normal"
+			}
+		}
+		defined_text = {
+			name = GetCultureControllerAcceptance
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_controller_promoted_culture = yes
+				}
+				localization_key = "culture_type_promoted"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_controller_marginalized_culture = yes
+				}
+				localization_key = "culture_type_marginalized"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_controller_primary_culture = yes
+				}
+				localization_key = "culture_type_primary"
+			}
+			text = {
+				localization_key = "culture_type_normal"
+			}
+		}
+		defined_text = {
+			name = GetCultureAcceptanceDesc
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_promoted_culture = yes
+				}
+				localization_key = "culture_type_promoted_desc"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_marginalized_culture = yes
+				}
+				localization_key = "culture_type_marginalized_desc"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_primary_culture = yes
+				}
+				localization_key = "culture_type_primary_desc"
+			}
+			text = {
+				localization_key = "culture_type_normal_desc"
+			}
+		}
+		defined_text = {
+			name = GetCultureOwnerAcceptanceDesc
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_owner_promoted_culture = yes
+				}
+				localization_key = "culture_type_promoted_desc"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_owner_marginalized_culture = yes
+				}
+				localization_key = "culture_type_marginalized_desc"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_owner_primary_culture = yes
+				}
+				localization_key = "culture_type_primary_desc"
+			}
+			text = {
+				localization_key = "culture_type_normal_desc"
+			}
+		}
+		defined_text = {
+			name = GetCultureControllerAcceptanceDesc
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_controller_promoted_culture = yes
+				}
+				localization_key = "culture_type_promoted"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_controller_marginalized_culture = yes
+				}
+				localization_key = "culture_type_marginalized"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = culture_temp
+						value = v
+					}
+					is_controller_primary_culture = yes
+				}
+				localization_key = "culture_type_primary"
+			}
+			text = {
+				localization_key = "culture_type_normal"
+			}
+		}
+	#
+	#Lists
+		defined_text = {
+			name = RenderCultureFamilyList
+			text = {
+				trigger = {
+					check_variable = {
+						var = layered_param_temp_array^num
+						value = 0
+						compare = greater_than
+					}
+					#Renderer Settings
+						set_temp_variable = {
+							var = layered_param_cutoff
+							value = 10
+						}
+						set_temp_variable = {
+							var = culture_group_iter
+							value = -1
+						}
+					#
+				}
+				localization_key = "[RenderCultureFamilyListInner]"
+			}
+		}
+		defined_text = {
+			name = RenderCultureFamilyListInner
+			text = {
+				trigger = {
+					add_to_temp_variable = {
+						var = culture_group_iter
+						value = 1
+					}
+					check_variable = {
+						var = culture_group_iter
+						value = layered_param_temp_array^num
+						compare = less_than
+					}
+					check_variable = {
+						var = culture_group_iter
+						value = layered_param_cutoff
+						compare = less_than
+					}
+					set_temp_variable = {
+						var = culture_group_temp
+						value = layered_param_temp_array^culture_group_iter
+					}
+				}
+				localization_key = culture_list_culture_group_tt
+			}
+		}
+		defined_text = {
+			name = RenderCultureGroupList
+			text = {
+				trigger = {
+					check_variable = {
+						var = param_temp_array^num
+						value = 0
+						compare = greater_than
+					}
+					#Renderer Settings
+						set_temp_variable = {
+							var = param_cutoff
+							value = 20
+						}
+						set_temp_variable = {
+							var = culture_iter
+							value = -1
+						}
+					#
+				}
+				localization_key = "[RenderCultureGroupListInner]"
+			}
+		}
+		defined_text = {
+			name = RenderCultureGroupListInner
+			text = {
+				trigger = {
+					add_to_temp_variable = {
+						var = culture_iter
+						value = 1
+					}
+					check_variable = {
+						var = culture_iter
+						value = param_temp_array^num
+						compare = less_than
+					}
+					check_variable = {
+						var = culture_iter
+						value = param_cutoff
+						compare = less_than
+					}
+					set_temp_variable = {
+						var = culture_temp
+						value = param_temp_array^culture_iter
+					}
+				}
+				localization_key = culture_list_culture_tt
+			}
+		}
+		defined_text = {
+			name = RenderCultureGroupListInnerHighlight
+			text = {
+				trigger = {
+					check_variable = {
+						var = v
+						value = param_temp_array^culture_iter
+						compare = equals
+					}
+				}
+				localization_key = culture_list_highlight_culture_tt
+			}
+			text = {
+				localization_key = culture_list_no_highlight_culture_tt
+			}
+		}
+		#Germanic
+			defined_text = {
+				name = GetGermanicCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = culture_groups_germanic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_germanic_desc
+				}
+			}
+			defined_text = {
+				name = GetGermanicNordicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_germanic_nordic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_germanic_nordic_desc
+				}
+			}
+			defined_text = {
+				name = GetGermanicHighCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_germanic_high_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_germanic_high_desc
+				}
+			}
+			defined_text = {
+				name = GetGermanicLowCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_germanic_low_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_germanic_low_desc
+				}
+			}
+			defined_text = {
+				name = GetGermanicDutchCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_germanic_dutch_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_germanic_dutch_desc
+				}
+			}
+			defined_text = {
+				name = GetGermanicBrittanicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_germanic_brittanic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_germanic_brittanic_desc
+				}
+			}
+			defined_text = {
+				name = GetGermanicOuterCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_germanic_outer_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_germanic_outer_desc
+				}
+			}
+			defined_text = {
+				name = GetGermanicBrittanicColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_germanic_brittanic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_germanic_brittanic_colonial_desc
+				}
+			}
+			defined_text = {
+				name = GetGermanicOtherColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_germanic_other_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_germanic_other_colonial_desc
+				}
+			}
+		#
+		#Baltic
+			defined_text = {
+				name = GetBalticCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_baltic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_baltic_desc
+				}
+			}
+			defined_text = {
+				name = GetBalticEasternCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_baltic_eastern_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_baltic_eastern_desc
+				}
+			}
+			defined_text = {
+				name = GetBalticColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_baltic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_baltic_colonial_desc
+				}
+			}
+		#
+		#Celtic
+			defined_text = {
+				name = GetCelticCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_celtic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_celtic_desc
+				}
+			}
+			defined_text = {
+				name = GetCelticBrittanicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_celtic_brittanic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_celtic_brittanic_desc
+				}
+			}
+			defined_text = {
+				name = GetCelticColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_celtic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_celtic_colonial_desc
+				}
+			}
+		#
+		#Basque
+			defined_text = {
+				name = GetBasqueCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_basque_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_basque_desc
+				}
+			}
+			defined_text = {
+				name = GetBasqueBasqueCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_basque_basque_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_basque_basque_desc
+				}
+			}
+			defined_text = {
+				name = GetBasqueColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_basque_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_basque_colonial_desc
+				}
+			}
+		#
+		#Romance
+			defined_text = {
+				name = GetRomanceCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_romance_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_romance_desc
+				}
+			}
+			defined_text = {
+				name = GetRomancePortugueseCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_romance_portuguese_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_romance_portuguese_desc
+				}
+			}
+			defined_text = {
+				name = GetRomanceSpanishCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_romance_spanish_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_romance_spanish_desc
+				}
+			}
+			defined_text = {
+				name = GetRomanceFrenchCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_romance_french_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_romance_french_desc
+				}
+			}
+			defined_text = {
+				name = GetRomanceItalianCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_romance_italian_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_romance_italian_desc
+				}
+			}
+			defined_text = {
+				name = GetRomanceEasternCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_romance_eastern_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_romance_eastern_desc
+				}
+			}
+			defined_text = {
+				name = GetRomancePortugueseColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_romance_portuguese_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_romance_portuguese_colonial_desc
+				}
+			}
+			defined_text = {
+				name = GetRomanceSpanishColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_romance_spanish_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_romance_spanish_colonial_desc
+				}
+			}
+			defined_text = {
+				name = GetRomanceFrenchColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_romance_french_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_romance_french_colonial_desc
+				}
+			}
+			defined_text = {
+				name = GetRomanceOtherColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_romance_other_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_romance_other_colonial_desc
+				}
+			}
+		#
+		#Hellenic
+			defined_text = {
+				name = GetHellenicCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_hellenic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_hellenic_desc
+				}
+			}
+			defined_text = {
+				name = GetHellenicIonicAtticCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_hellenic_ionic_attic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_hellenic_ionic_attic_desc
+				}
+			}
+			defined_text = {
+				name = GetHellenicColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_hellenic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_hellenic_colonial_desc
+				}
+			}
+		#
+		#Illyrian
+			defined_text = {
+				name = GetIllyrianCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_illyrian_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_illyrian_desc
+				}
+			}
+			defined_text = {
+				name = GetIllyrianAlbanianCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_illyrian_albanian_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_illyrian_albanian_desc
+				}
+			}
+			defined_text = {
+				name = GetIllyrianColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_illyrian_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_illyrian_colonial_desc
+				}
+			}
+		#
+		#Slavic
+			defined_text = {
+				name = GetSlavicCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_slavic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_slavic_desc
+				}
+			}
+			defined_text = {
+				name = GetSlavicSouthernCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_slavic_southern_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_slavic_southern_desc
+				}
+			}
+			defined_text = {
+				name = GetSlavicNorthernCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_slavic_northern_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_slavic_northern_desc
+				}
+			}
+			defined_text = {
+				name = GetSlavicWesternCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_slavic_western_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_slavic_western_desc
+				}
+			}
+			defined_text = {
+				name = GetSlavicEasternCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_slavic_eastern_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_slavic_eastern_desc
+				}
+			}
+			defined_text = {
+				name = GetSlavicColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_slavic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_slavic_colonial_desc
+				}
+			}
+		#
+		#Uralic
+			defined_text = {
+				name = GetUralicCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_uralic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_uralic_desc
+				}
+			}
+			defined_text = {
+				name = GetUralicFinnicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_uralic_finnic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_uralic_finnic_desc
+				}
+			}
+			defined_text = {
+				name = GetUralicUgricCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_uralic_ugric_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_uralic_ugric_desc
+				}
+			}
+			defined_text = {
+				name = GetUralicPermicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_uralic_permic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_uralic_permic_desc
+				}
+			}
+			defined_text = {
+				name = GetUralicColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_uralic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_uralic_colonial_desc
+				}
+			}
+		#
+		#Caucasian
+			defined_text = {
+				name = GetCaucasianCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_caucasian_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_caucasian_desc
+				}
+			}
+			defined_text = {
+				name = GetCaucasianNorthernCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_caucasian_northern_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_caucasian_northern_desc
+				}
+			}
+			defined_text = {
+				name = GetCaucasianSouthernCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_caucasian_southern_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_caucasian_southern_desc
+				}
+			}
+			defined_text = {
+				name = GetCaucasianEasternCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_caucasian_eastern_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_caucasian_eastern_desc
+				}
+			}
+			defined_text = {
+				name = GetCaucasianColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_caucasian_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_caucasian_colonial_desc
+				}
+			}
+		#
+		#Armenic
+			defined_text = {
+				name = GetArmenicCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_armenic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_armenic_desc
+				}
+			}
+			defined_text = {
+				name = GetArmenicArmenicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_armenic_armenic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_armenic_armenic_desc
+				}
+			}
+			defined_text = {
+				name = GetArmenicColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_armenic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_armenic_colonial_desc
+				}
+			}
+		#
+		#Iranian
+			defined_text = {
+				name = GetIranianCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_iranian_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_iranian_desc
+				}
+			}
+			defined_text = {
+				name = GetIranianWesternCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_iranian_western_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_iranian_western_desc
+				}
+			}
+			defined_text = {
+				name = GetIranianCentralCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_iranian_central_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_iranian_central_desc
+				}
+			}
+			defined_text = {
+				name = GetIranianEasternCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_iranian_eastern_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_iranian_eastern_desc
+				}
+			}
+			defined_text = {
+				name = GetIranianColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_iranian_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_iranian_colonial_desc
+				}
+			}
+		#
+		#Turkic
+			defined_text = {
+				name = GetTurkicCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_turkic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_turkic_desc
+				}
+			}
+			defined_text = {
+				name = GetTurkicOghuzCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_turkic_oghuz_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_turkic_oghuz_desc
+				}
+			}
+			defined_text = {
+				name = GetTurkicKipchakCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_turkic_kipchak_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_turkic_kipchak_desc
+				}
+			}
+			defined_text = {
+				name = GetTurkicKarlakCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_turkic_karlak_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_turkic_karlak_desc
+				}
+			}
+			defined_text = {
+				name = GetTurkicAltaicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_turkic_altaic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_turkic_altaic_desc
+				}
+			}
+			defined_text = {
+				name = GetTurkicColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_turkic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_turkic_colonial_desc
+				}
+			}
+		#
+		#Semetic
+			defined_text = {
+				name = GetSemeticCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_semetic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_semetic_desc
+				}
+			}
+			defined_text = {
+				name = GetSemeticJewishCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_semetic_jewish_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_semetic_jewish_desc
+				}
+			}
+			defined_text = {
+				name = GetSemeticMaghrebCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_semetic_maghreb_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_semetic_maghreb_desc
+				}
+			}
+			defined_text = {
+				name = GetSemeticMashriqCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_semetic_mashriq_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_semetic_mashriq_desc
+				}
+			}
+			defined_text = {
+				name = GetSemeticAzraqCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_semetic_azraq_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_semetic_azraq_desc
+				}
+			}
+			defined_text = {
+				name = GetSemeticEthiopicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_semetic_ethiopic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_semetic_ethiopic_desc
+				}
+			}
+			defined_text = {
+				name = GetSemeticColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_semetic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_semetic_colonial_desc
+				}
+			}
+		#
+		#Aryan
+			defined_text = {
+				name = GetAryanCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_aryan_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_aryan_desc
+				}
+			}
+			defined_text = {
+				name = GetAryanIndicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_aryan_indic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_aryan_indic_desc
+				}
+			}
+			defined_text = {
+				name = GetAryanHindiCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_aryan_hindi_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_aryan_hindi_desc
+				}
+			}
+			defined_text = {
+				name = GetAryanSahyadriCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_aryan_sahyadri_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_aryan_sahyadri_desc
+				}
+			}
+			defined_text = {
+				name = GetAryanMagadhanPrakitCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_aryan_magadhan_prakit_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_aryan_magadhan_prakit_desc
+				}
+			}
+			defined_text = {
+				name = GetAryanColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_aryan_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_aryan_colonial_desc
+				}
+			}
+		#
+		#Dravidian
+			defined_text = {
+				name = GetDravidianCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_dravidian_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_dravidian_desc
+				}
+			}
+			defined_text = {
+				name = GetDravidianSouthernCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_dravidian_southern_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_dravidian_southern_desc
+				}
+			}
+			defined_text = {
+				name = GetDravidianColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_dravidian_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_dravidian_colonial_desc
+				}
+			}
+		#
+		#SinoHimilayan
+			defined_text = {
+				name = GetSinoHimilayanCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_sino_himilayan_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_sino_himilayan_desc
+				}
+			}
+			defined_text = {
+				name = GetSinoHimilayanBodicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_sino_himilayan_bodic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_sino_himilayan_bodic_desc
+				}
+			}
+			defined_text = {
+				name = GetSinoHimilayanBrahmaputranicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_sino_himilayan_brahmaputranic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_sino_himilayan_brahmaputranic_desc
+				}
+			}
+			defined_text = {
+				name = GetSinoHimilayanBurmeicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_sino_himilayan_burmeic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_sino_himilayan_burmeic_desc
+				}
+			}
+			defined_text = {
+				name = GetSinoHimilayanSouthSiniticCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_sino_himilayan_south_sinitic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_sino_himilayan_south_sinitic_desc
+				}
+			}
+			defined_text = {
+				name = GetSinoHimilayanNorthSiniticCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_sino_himilayan_north_sinitic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_sino_himilayan_north_sinitic_desc
+				}
+			}
+			defined_text = {
+				name = GetSinoHimilayanColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_sino_himilayan_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_sino_himilayan_colonial_desc
+				}
+			}
+		#
+		#Mongolic
+			defined_text = {
+				name = GetMongolicCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_mongolic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_mongolic_desc
+				}
+			}
+			defined_text = {
+				name = GetMongolicMongolCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_mongolic_mongol_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_mongolic_mongol_desc
+				}
+			}
+			defined_text = {
+				name = GetMongolicColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_mongolic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_mongolic_colonial_desc
+				}
+			}
+		#
+		#Tungusic
+			defined_text = {
+				name = GetTungusicCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_tungusic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_tungusic_desc
+				}
+			}
+			defined_text = {
+				name = GetTungusicTungusicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_tungusic_tungusic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_tungusic_tungusic_desc
+				}
+			}
+			defined_text = {
+				name = GetTungusicColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_tungusic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_tungusic_colonial_desc
+				}
+			}
+		#
+		#Kamchukotic
+			defined_text = {
+				name = GetKamchukoticCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_kamchukotic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_famiily_kamchukotic_desc
+				}
+			}
+			defined_text = {
+				name = GetKamchukoticKamchukcheeCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_kamchukotic_kamchukchee_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_kamchukotic_kamchukchee_desc
+				}
+			}
+			defined_text = {
+				name = GetKamchukoticColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_kamchukotic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_kamchukotic_colonial_desc
+				}
+			}
+		#
+		#Ainuic
+			defined_text = {
+				name = GetAinuicCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_ainuic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_ainuic_desc
+				}
+			}
+			defined_text = {
+				name = GetAinuicAinuicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_ainuic_ainu_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_ainuic_ainu_desc
+				}
+			}
+			defined_text = {
+				name = GetAinuicColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_ainuic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_ainuic_colonial_desc
+				}
+			}
+		#
+		#Koreanic
+			defined_text = {
+				name = GetKoreanicCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_koreanic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_koreanic_desc
+				}
+			}
+			defined_text = {
+				name = GetKoreanicKoreanCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_koreanic_korean_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_koreanic_korean_desc
+				}
+			}
+			defined_text = {
+				name = GetKoreanicColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_koreanic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_koreanic_colonial_desc
+				}
+			}
+		#
+		#Japonic
+			defined_text = {
+				name = GetJaponicCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_japonic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_japonic_desc
+				}
+			}
+			defined_text = {
+				name = GetJaponicJapaneseCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_japonic_japanese_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_japonic_japanese_desc
+				}
+			}
+			defined_text = {
+				name = GetJaponicRyukyuanCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_japonicryukyuan_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_japonic_ryukyuan_desc
+				}
+			}
+			defined_text = {
+				name = GetJaponicColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_japonic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_japonic_colonial_desc
+				}
+			}
+		#
+		#Daic
+			defined_text = {
+				name = GetDaicCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_daic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_daic_desc
+				}
+			}
+			defined_text = {
+				name = GetDaicTaiCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_daic_tai_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_daic_tai_desc
+				}
+			}
+			defined_text = {
+				name = GetDaicKadicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_daic_kadic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_daic_kadic_desc
+				}
+			}
+			defined_text = {
+				name = GetDaicHmongCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_daic_hmong_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_daic_hmong_desc
+				}
+			}
+			defined_text = {
+				name = GetDaicColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_daic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_daic_colonial_desc
+				}
+			}
+		#
+		#AustroAsiastic
+			defined_text = {
+				name = GetAustroAsiasticCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_austro_asiastic_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_austro_asiastic_desc
+				}
+			}
+			defined_text = {
+				name = GetAustroAsiasticKhasiCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_austro_asiastic_khasi_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_austro_asiastic_khasi_desc
+				}
+			}
+			defined_text = {
+				name = GetAustroAsiasticMonKhmerCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_austro_asiastic_mon_khmer_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_austro_asiastic_mon_khmer_desc
+				}
+			}
+			defined_text = {
+				name = GetAustroAsiasticColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_austro_asiastic_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_austro_asiastic_colonial_desc
+				}
+			}
+		#
+		#Austronesian
+			defined_text = {
+				name = GetAustronesianCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_austronesian_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_austronesian_desc
+				}
+			}
+			defined_text = {
+				name = GetAustronesianFormosanCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_austronesian_formosan_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_austronesian_formosan_desc
+				}
+			}
+			defined_text = {
+				name = GetAustronesianDhivehianCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_austronesian_dhivehian_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_austronesian_dhivehian_desc
+				}
+			}
+			defined_text = {
+				name = GetAustronesianMalayoChampaicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_austronesian_malayo_champaic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_austronesian_malayo_champaic_desc
+				}
+			}
+			defined_text = {
+				name = GetAustronesianFilipinoCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_austronesian_filipino_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_austronesian_filipino_desc
+				}
+			}
+			defined_text = {
+				name = GetAustronesianMoulaccanCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_austronesian_moulaccan_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_austronesian_moulaccan_desc
+				}
+			}
+			defined_text = {
+				name = GetAustronesianOceanicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_austronesian_oceanic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_austronesian_oceanic_desc
+				}
+			}
+			defined_text = {
+				name = GetAustronesianColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_austronesian_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_austronesian_colonial_desc
+				}
+			}
+		#
+		#Papuan
+			defined_text = {
+				name = GetPapuanCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_papuan_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_papuan_desc
+				}
+			}
+			defined_text = {
+				name = GetPapuanPapuanCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_papuan_papuan_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_papuan_papuan_desc
+				}
+			}
+			defined_text = {
+				name = GetPapuanColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_papuan_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_papuan_colonial_desc
+				}
+			}
+		#
+		#Pama Nyungan
+			defined_text = {
+				name = GetPamaNyunganCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_pama_nyungan_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_pama_nyungan_desc
+				}
+			}
+			defined_text = {
+				name = GetPamaNyunganPamaCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_pama_nyungan_pama_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_pama_nyungan_pama_desc
+				}
+			}
+			defined_text = {
+				name = GetPamaNyunganNyunganCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_pama_nyungan_nyungan_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_pama_nyungan_nyungan_desc
+				}
+			}
+			defined_text = {
+				name = GetPamaNyunganColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_pama_nyungan_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_pama_nyungan_colonial_desc
+				}
+			}
+		#
+		#NativeAmerican
+			defined_text = {
+				name = GetNativeAmericanCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_native_american_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_native_american_desc
+				}
+			}
+			defined_text = {
+				name = GetNativeAmericanNorthernCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_native_american_northern_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_native_american_northern_desc
+				}
+			}
+			defined_text = {
+				name = GetNativeAmericanCentralCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_native_american_central_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_native_american_central_desc
+				}
+			}
+			defined_text = {
+				name = GetNativeAmericanSouthernCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_native_american_southern_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_native_american_southern_desc
+				}
+			}
+			defined_text = {
+				name = GetNativeAmericanColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_native_american_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_native_american_colonial_desc
+				}
+			}
+		#
+		#Nilo-Saharan
+			defined_text = {
+				name = GetNiloSaharanCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_nilo_saharan_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_nilo_saharan_desc
+				}
+			}
+			defined_text = {
+				name = GetNiloSaharanNileCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_nilo_saharan_nile_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_nilo_saharan_nile_desc
+				}
+			}
+			defined_text = {
+				name = GetNiloSaharanSaharanCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_nilo_saharan_saharan_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_nilo_saharan_saharan_desc
+				}
+			}
+			defined_text = {
+				name = GetNiloSaharanColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_nilo_saharan_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_nilo_saharan_colonial_desc
+				}
+			}
+		#
+		#NigerCongo
+			defined_text = {
+				name = GetNigerCongoCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_niger_congo_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_niger_congo_desc
+				}
+			}
+			defined_text = {
+				name = GetNigerCongoAtlanticCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_niger_congo_atlantic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_niger_congo_atlantic_desc
+				}
+			}
+			defined_text = {
+				name = GetNigerCongoMandeCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_niger_congo_mande_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_niger_congo_mande_desc
+				}
+			}
+			defined_text = {
+				name = GetNigerCongoNorthVoltaCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_niger_congo_north_volta_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_niger_congo_north_volta_desc
+				}
+			}
+			defined_text = {
+				name = GetNigerCongoSouthVoltaCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_niger_congo_south_volta_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_niger_congo_south_volta_desc
+				}
+			}
+			defined_text = {
+				name = GetNigerCongoColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_niger_congo_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_niger_congo_colonial_desc
+				}
+			}
+		#
+		#Bantu
+			defined_text = {
+				name = GetBantuCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_bantu_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_bantu_desc
+				}
+			}
+			defined_text = {
+				name = GetBantuNorthwestCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_bantu_northwest_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_bantu_northwest_desc
+				}
+			}
+			defined_text = {
+				name = GetBantuCentralCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_bantu_central_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_bantu_central_desc
+				}
+			}
+			defined_text = {
+				name = GetBantuSouthwestCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_bantu_southwest_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_bantu_southwest_desc
+				}
+			}
+			defined_text = {
+				name = GetBantuSavannicCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_bantu_savannic_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_niger_bantu_savannic_desc
+				}
+			}
+			defined_text = {
+				name = GetBantuNortheastCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_bantu_northeast_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_bantu_northeast_desc
+				}
+			}
+			defined_text = {
+				name = GetBantuSoutheastCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_bantu_southeast_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_bantu_southeast_desc
+				}
+			}
+			defined_text = {
+				name = GetBantuColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_bantu_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_bantu_congo_colonial_desc
+				}
+			}
+		#
+		#Khosian
+			defined_text = {
+				name = GetKhosianCultureFamilyList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = layered_param_temp_array
+							all_of = {
+								array = global.culture_khosian_array
+								value = culture_group_temp
+
+								add_to_temp_array = {
+									array = layered_param_temp_array
+									value = culture_group_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_family_khosian_desc
+				}
+			}
+			defined_text = {
+				name = GetKhosianKhosianCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_khosian_khosian_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_khosian_khosian_desc
+				}
+			}
+			defined_text = {
+				name = GetKhosianColonialCultureGroupList
+				text = {
+					trigger = {
+						#Renderer Data
+							clear_temp_array = param_temp_array
+							all_of = {
+								array = global.culture_khosian_colonial_array
+								value = culture_temp
+
+								add_to_temp_array = {
+									array = param_temp_array
+									value = culture_temp
+								}
+							}
+						#
+					}
+					localization_key = culture_group_khosian_colonial_desc
+				}
+			}
+		#
+	#
+	#Acceptance List
+		defined_text = {
+			name = GetPrimaryCultureList
+			text = {
+				trigger = {
+					#Renderer Data
+						clear_temp_array = param_temp_array
+						all_of = {
+							array = pops_primary_culture_array
+							value = culture_temp
+
+							add_to_temp_array = {
+								array = param_temp_array
+								value = culture_temp
+							}
+						}
+					#
+				}
+				localization_key = culture_type_primary_list
+			}
+		}
+		defined_text = {
+			name = GetPromotedCultureList
+			text = {
+				trigger = {
+					#Renderer Data
+						clear_temp_array = param_temp_array
+						all_of = {
+							array = pops_promoted_culture_array
+							value = culture_temp
+
+							add_to_temp_array = {
+								array = param_temp_array
+								value = culture_temp
+							}
+						}
+					#
+				}
+				localization_key = culture_type_promoted_list
+			}
+		}
+		defined_text = {
+			name = GetMarginalizedCultureList
+			text = {
+				trigger = {
+					#Renderer Data
+						clear_temp_array = param_temp_array
+						all_of = {
+							array = pops_marginalized_culture_array
+							value = culture_temp
+
+							add_to_temp_array = {
+								array = param_temp_array
+								value = culture_temp
+							}
+						}
+					#
+				}
+				localization_key = culture_type_marginalized_list
+			}
+		}
+	#
+	#Family List
+	#
+#
+#Religion
+	#Base
+		defined_text = {
+			name = GetReligionName
+			text = {
+				localization_key = "[?v.GetTokenLocalizedKey]"
+			}
+		}
+	#
+	#Family
+		defined_text = {
+			name = GetReligionFamilyName
+			text = {
+				trigger = {
+					set_temp_variable = {
+						grgn = global.family@var:v
+					}
+				}
+				localization_key = "[?grgn.GetTokenLocalizedKey]"
+			}
+		}
+		defined_text = {
+			name = GetReligionFamilyList
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:religion_family_christian
+						compare = equals
+					}
+				}
+				localization_key = "[GetChristianReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:religion_family_muslim
+						compare = equals
+					}
+				}
+				localization_key = "[GetMuslimReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:religion_family_other_abrahamic
+						compare = equals
+					}
+				}
+				localization_key = "[GetOtherAbrahamicReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:religion_family_iranian
+						compare = equals
+					}
+				}
+				localization_key = "[GetIranianReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:religion_family_indian
+						compare = equals
+					}
+				}
+				localization_key = "[GetIndianReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:religion_family_buddhist
+						compare = equals
+					}
+				}
+				localization_key = "[GetBuddhistReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:religion_family_eastern_folk
+						compare = equals
+					}
+				}
+				localization_key = "[GetEasternFolkReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:religion_family_eastern_pantheist
+						compare = equals
+					}
+				}
+				localization_key = "[GetEasternPatheistReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:religion_family_pagan
+						compare = equals
+					}
+				}
+				localization_key = "[GetPaganReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:religion_family_other
+						compare = equals
+					}
+				}
+				localization_key = "[GetOtherReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = global.family@var:v
+						value = token:religion_family_irreligious
+						compare = equals
+					}
+				}
+				localization_key = "[GetIrreligiousReligionFamilyList]"
+			}
+		}
+	#
+	#Population
+		defined_text = {
+			name = GetReligionPopulation
+			text = {
+				trigger = {
+					set_temp_variable = {
+						gcp = population_k@var:v
+					}
+					check_variable = {
+						var = grp
+						value = 999999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = grp
+						value = 1000000
+					}
+				}
+				localization_key = "[?grp|2]B"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						grp = population_k@var:v
+					}
+					check_variable = {
+						var = grp
+						value = 99999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = grp
+						value = 1000
+					}
+				}
+				localization_key = "[?grp|0]M"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						grp = population_k@var:v
+					}
+					check_variable = {
+						var = grp
+						value = 9999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = grp
+						value = 1000
+					}
+				}
+				localization_key = "[?grp|1]M"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						grp = population_k@var:v
+					}
+					check_variable = {
+						var = grp
+						value = 999.999
+						compare = greater_than_or_equals
+					}
+					divide_temp_variable = {
+						var = grp
+						value = 1000
+					}
+				}
+				localization_key = "[?grp|2]M"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						grp = population_k@var:v
+					}
+					check_variable = {
+						var = grp
+						value = 99.999
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?grp|0]k"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						grp = population_k@var:v
+					}
+					check_variable = {
+						var = grp
+						value = 9.999
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?grp|1]k"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						grp = population_k@var:v
+					}
+					check_variable = {
+						var = grp
+						value = 0.999
+						compare = greater_than_or_equals
+					}
+				}
+				localization_key = "[?grp|2]k"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						grp = population_k@var:v
+					}
+					multiply_temp_variable = {
+						var = grp
+						value = 1000
+					}
+				}
+				localization_key = "[?grp|0]"
+			}
+		}
+		defined_text = {
+			name = GetReligionPrecisePopulation
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = grpp
+						value = population@var:v
+					}
+					check_variable = {
+						var = grpp
+						value = 100000
+					}
+				}
+				localization_key = "[?grpp|3]k"
+			}
+			text = {
+				trigger = {
+					multiply_temp_variable = {
+						var = grpp
+						value = 1000
+					}
+				}
+				localization_key = "[?grpp|0]"
+			}
+		}
+		defined_text = {
+			name = GetReligionPercentage
+			text = {
+				trigger = {
+					set_temp_variable = {
+						grpe = percentage@var:v
+					}
+				}
+				localization_key = "[?grpe|0%]"
+			}
+		}
+	#
+	#Acceptance
+		defined_text = {
+			name = GetReligionAcceptance
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_promoted_religion = yes
+				}
+				localization_key = "religion_type_promoted"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_marginalized_religion = yes
+				}
+				localization_key = "religion_type_marginalized"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_primary_religion = yes
+				}
+				localization_key = "religion_type_primary"
+			}
+			text = {
+				localization_key = "religion_type_normal"
+			}
+		}
+		defined_text = {
+			name = GetReligionOwnerAcceptance
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_owner_promoted_religion = yes
+				}
+				localization_key = "religion_type_promoted"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_owner_marginalized_religion = yes
+				}
+				localization_key = "religion_type_marginalized"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_owner_primary_religion = yes
+				}
+				localization_key = "religion_type_primary"
+			}
+			text = {
+				localization_key = "religion_type_normal"
+			}
+		}
+		defined_text = {
+			name = GetReligionControllerAcceptance
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_controller_promoted_religion = yes
+				}
+				localization_key = "religion_type_promoted"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_controller_marginalized_religion = yes
+				}
+				localization_key = "religion_type_marginalized"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_controller_primary_religion = yes
+				}
+				localization_key = "religion_type_primary"
+			}
+			text = {
+				localization_key = "religion_type_normal"
+			}
+		}
+		defined_text = {
+			name = GetReligionAcceptanceDesc
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_promoted_religion = yes
+				}
+				localization_key = "religion_type_promoted_desc"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_marginalized_religion = yes
+				}
+				localization_key = "religion_type_marginalized_desc"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_primary_religion = yes
+				}
+				localization_key = "religion_type_primary_desc"
+			}
+			text = {
+				localization_key = "religion_type_normal_desc"
+			}
+		}
+		defined_text = {
+			name = GetReligionOwnerAcceptanceDesc
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_owner_promoted_religion = yes
+				}
+				localization_key = "religion_type_promoted_desc"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_owner_marginalized_religion = yes
+				}
+				localization_key = "religion_type_marginalized_desc"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_owner_primary_religion = yes
+				}
+				localization_key = "religion_type_primary_desc"
+			}
+			text = {
+				localization_key = "religion_type_normal_desc"
+			}
+		}
+		defined_text = {
+			name = GetReligionControllerAcceptanceDesc
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_controller_promoted_religion = yes
+				}
+				localization_key = "religion_type_promoted"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_controller_marginalized_religion = yes
+				}
+				localization_key = "religion_type_marginalized"
+			}
+			text = {
+				trigger = {
+					set_temp_variable = {
+						var = religion_temp
+						value = v
+					}
+					is_controller_primary_religion = yes
+				}
+				localization_key = "religion_type_primary"
+			}
+			text = {
+				localization_key = "religion_type_normal"
+			}
+		}
+	#
+	#Acceptance List
+	defined_text = {
+		name = GetPrimaryReligionList
+		text = {
+			trigger = {
+				#Renderer Data
+					clear_temp_array = param_temp_array
+					all_of = {
+						array = pops_primary_religion_array
+						value = religion_temp
+
+						add_to_temp_array = {
+							array = param_temp_array
+							value = religion_temp
+						}
+					}
+				#
+			}
+			localization_key = religion_type_primary_list
+		}
+	}
+	defined_text = {
+		name = GetPromotedReligionList
+		text = {
+			trigger = {
+				#Renderer Data
+					clear_temp_array = param_temp_array
+					all_of = {
+						array = pops_promoted_religion_array
+						value = religion_temp
+
+						add_to_temp_array = {
+							array = param_temp_array
+							value = religion_temp
+						}
+					}
+				#
+			}
+			localization_key = religion_type_promoted_list
+		}
+	}
+	defined_text = {
+		name = GetMarginalizedReligionList
+		text = {
+			trigger = {
+				#Renderer Data
+					clear_temp_array = param_temp_array
+					all_of = {
+						array = pops_marginalized_religion_array
+						value = religion_temp
+
+						add_to_temp_array = {
+							array = param_temp_array
+							value = religion_temp
+						}
+					}
+				#
+			}
+			localization_key = religion_type_marginalized_list
+		}
+	}
+#
+	#Lists
+		defined_text = {
+			name = RenderReligionFamilyList
+			text = {
+				trigger = {
+					check_variable = {
+						var = param_temp_array^num
+						value = 0
+						compare = greater_than
+					}
+					#Renderer Settings
+						set_temp_variable = {
+							var = param_cutoff
+							value = 20
+						}
+						set_temp_variable = {
+							var = religion_iter
+							value = -1
+						}
+					#
+				}
+				localization_key = "[RenderReligionFamilyListInner]"
+			}
+		}
+		defined_text = {
+			name = RenderReligionFamilyListInner
+			text = {
+				trigger = {
+					add_to_temp_variable = {
+						var = religion_iter
+						value = 1
+					}
+					check_variable = {
+						var = religion_iter
+						value = param_temp_array^num
+						compare = less_than
+					}
+					check_variable = {
+						var = religion_iter
+						value = param_cutoff
+						compare = less_than
+					}
+					set_temp_variable = {
+						var = religion_temp
+						value = param_temp_array^religion_iter
+					}
+				}
+				localization_key = religion_list_religion_tt
+			}
+		}
+		defined_text = {
+			name = RenderReligionFamilyListInnerHighlight
+			text = {
+				trigger = {
+					check_variable = {
+						var = v
+						value = param_temp_array^religion_iter
+						compare = equals
+					}
+				}
+				localization_key = religion_list_highlight_religion_tt
+			}
+			text = {
+				localization_key = religion_list_no_highlight_religion_tt
+			}
+		}
+		defined_text = {
+			name = GetChristianReligionFamilyList
+			text = {
+				trigger = {
+					#Renderer Data
+						clear_temp_array = param_temp_array
+						all_of = {
+							array = global.religion_christian_array
+							value = religion_temp
+
+							add_to_temp_array = {
+								array = param_temp_array
+								value = religion_temp
+							}
+						}
+					#
+				}
+				localization_key = religion_family_christian_desc
+			}
+		}
+		defined_text = {
+			name = GetMuslimReligionFamilyList
+			text = {
+				trigger = {
+					#Renderer Data
+						clear_temp_array = param_temp_array
+						all_of = {
+							array = global.religion_muslim_array
+							value = religion_temp
+
+							add_to_temp_array = {
+								array = param_temp_array
+								value = religion_temp
+							}
+						}
+					#
+				}
+				localization_key = religion_family_muslim_desc
+			}
+		}
+		defined_text = {
+			name = GetOtherAbrahamicReligionFamilyList
+			text = {
+				trigger = {
+					#Renderer Data
+						clear_temp_array = param_temp_array
+						all_of = {
+							array = global.religion_other_abrahamic_array
+							value = religion_temp
+
+							add_to_temp_array = {
+								array = param_temp_array
+								value = religion_temp
+							}
+						}
+					#
+				}
+				localization_key = religion_family_other_abrahamic_desc
+			}
+		}
+		defined_text = {
+			name = GetIranianReligionFamilyList
+			text = {
+				trigger = {
+					#Renderer Data
+						clear_temp_array = param_temp_array
+						all_of = {
+							array = global.religion_iranian_array
+							value = religion_temp
+
+							add_to_temp_array = {
+								array = param_temp_array
+								value = religion_temp
+							}
+						}
+					#
+				}
+				localization_key = religion_family_iranian_desc
+			}
+		}
+		defined_text = {
+			name = GetIndianReligionFamilyList
+			text = {
+				trigger = {
+					#Renderer Data
+						clear_temp_array = param_temp_array
+						all_of = {
+							array = global.religion_indian_array
+							value = religion_temp
+
+							add_to_temp_array = {
+								array = param_temp_array
+								value = religion_temp
+							}
+						}
+					#
+				}
+				localization_key = religion_family_indian_desc
+			}
+		}
+		defined_text = {
+			name = GetBuddhistReligionFamilyList
+			text = {
+				trigger = {
+					#Renderer Data
+						clear_temp_array = param_temp_array
+						all_of = {
+							array = global.religion_buddhist_array
+							value = religion_temp
+
+							add_to_temp_array = {
+								array = param_temp_array
+								value = religion_temp
+							}
+						}
+					#
+				}
+				localization_key = religion_family_buddhist_desc
+			}
+		}
+		defined_text = {
+			name = GetEasternFolkReligionFamilyList
+			text = {
+				trigger = {
+					#Renderer Data
+						clear_temp_array = param_temp_array
+						all_of = {
+							array = global.religion_eastern_folk_array
+							value = religion_temp
+
+							add_to_temp_array = {
+								array = param_temp_array
+								value = religion_temp
+							}
+						}
+					#
+				}
+				localization_key = religion_family_eastern_folk_desc
+			}
+		}
+		defined_text = {
+			name = GetEasternPantheistReligionFamilyList
+			text = {
+				trigger = {
+					#Renderer Data
+						clear_temp_array = param_temp_array
+						all_of = {
+							array = global.religion_eastern_pantheist_array
+							value = religion_temp
+
+							add_to_temp_array = {
+								array = param_temp_array
+								value = religion_temp
+							}
+						}
+					#
+				}
+				localization_key = religion_family_eastern_pantheist_desc
+			}
+		}
+		defined_text = {
+			name = GetPaganReligionFamilyList
+			text = {
+				trigger = {
+					#Renderer Data
+						clear_temp_array = param_temp_array
+						all_of = {
+							array = global.religion_pagan_array
+							value = religion_temp
+
+							add_to_temp_array = {
+								array = param_temp_array
+								value = religion_temp
+							}
+						}
+					#
+				}
+				localization_key = religion_family_pagan_desc
+			}
+		}
+		defined_text = {
+			name = GetOtherReligionFamilyList
+			text = {
+				trigger = {
+					#Renderer Data
+						clear_temp_array = param_temp_array
+						all_of = {
+							array = global.religion_other_array
+							value = religion_temp
+
+							add_to_temp_array = {
+								array = param_temp_array
+								value = religion_temp
+							}
+						}
+					#
+				}
+				localization_key = religion_family_other_desc
+			}
+		}
+		defined_text = {
+			name = GetIrreligiousReligionFamilyList
+			text = {
+				trigger = {
+					#Renderer Data
+						clear_temp_array = param_temp_array
+						all_of = {
+							array = global.religion_irreligious_array
+							value = religion_temp
+
+							add_to_temp_array = {
+								array = param_temp_array
+								value = religion_temp
+							}
+						}
+					#
+				}
+				localization_key = religion_family_irreligious_desc
+			}
+		}
+
+	#
+#
+#Backend
+	defined_text = {
+		name = RenderCultureFamilyTransfer
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_germanic
+					compare = equals
+				}
+			}
+			localization_key = "[GetGermanicCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_baltic
+					compare = equals
+				}
+			}
+			localization_key = "[GetBalticCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_celtic
+					compare = equals
+				}
+			}
+			localization_key = "[GetCelticCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_basque
+					compare = equals
+				}
+			}
+			localization_key = "[GetBasqueCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_romance
+					compare = equals
+				}
+			}
+			localization_key = "[GetRomanceCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_hellenic
+					compare = equals
+				}
+			}
+			localization_key = "[GeHellenicCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_illyrian
+					compare = equals
+				}
+			}
+			localization_key = "[GetIllyrianCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_slavic
+					compare = equals
+				}
+			}
+			localization_key = "[GetSlavicCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_uralic
+					compare = equals
+				}
+			}
+			localization_key = "[GetUralicCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_caucasian
+					compare = equals
+				}
+			}
+			localization_key = "[GetCaucasianCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_armenic
+					compare = equals
+				}
+			}
+			localization_key = "[GetArmenicCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_iranian
+					compare = equals
+				}
+			}
+			localization_key = "[GetIranianCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_turkic
+					compare = equals
+				}
+			}
+			localization_key = "[GetTurkicCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_semetic
+					compare = equals
+				}
+			}
+			localization_key = "[GetSemeticCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_aryan
+					compare = equals
+				}
+			}
+			localization_key = "[GetAryanCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_dravidian
+					compare = equals
+				}
+			}
+			localization_key = "[GetDravidianCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_sino_himilayan
+					compare = equals
+				}
+			}
+			localization_key = "[GetSinoHimilayanCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_mongolic
+					compare = equals
+				}
+			}
+			localization_key = "[GetMongolicCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_tungusic
+					compare = equals
+				}
+			}
+			localization_key = "[GetTungusicCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_kamchukotic
+					compare = equals
+				}
+			}
+			localization_key = "[GetKamchukoticCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_ainuic
+					compare = equals
+				}
+			}
+			localization_key = "[GetAinuicCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_koreanic
+					compare = equals
+				}
+			}
+			localization_key = "[GetKoreanicCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_japonic
+					compare = equals
+				}
+			}
+			localization_key = "[GetJaponicCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_daic
+					compare = equals
+				}
+			}
+			localization_key = "[GetDaicCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_austro_asiastic
+					compare = equals
+				}
+			}
+			localization_key = "[GetAustroAsiasticCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_austronesian
+					compare = equals
+				}
+			}
+			localization_key = "[GetAustronesianCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_papuan
+					compare = equals
+				}
+			}
+			localization_key = "[GetPapuanCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_pama_nyungan
+					compare = equals
+				}
+			}
+			localization_key = "[GetPamaNyunganCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_native_american
+					compare = equals
+				}
+			}
+			localization_key = "[GetNativeAmericanCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_nilo_saharan
+					compare = equals
+				}
+			}
+			localization_key = "[GetNiloSaharanCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_niger_congo
+					compare = equals
+				}
+			}
+			localization_key = "[GetNigerCongoCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_bantu
+					compare = equals
+				}
+			}
+			localization_key = "[GetBantuCultureFamilyList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_family_temp
+					value = token:culture_family_khosian
+					compare = equals
+				}
+			}
+			localization_key = "[GetKhosianCultureFamilyList]"
+		}
+	}
+	defined_text = {
+		name = RenderCultureGroupTransfer
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_germanic_nordic
+					compare = equals
+				}
+			}
+			localization_key = "[GetGermanicNordicCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_germanic_high
+					compare = equals
+				}
+			}
+			localization_key = "[GetGermanicHighCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_germanic_low
+					compare = equals
+				}
+			}
+			localization_key = "[GetGermanicLowCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_germanic_dutch
+					compare = equals
+				}
+			}
+			localization_key = "[GetGermanicDutchCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_germanic_brittanic
+					compare = equals
+				}
+			}
+			localization_key = "[GetGermanicBrittanicCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_germanic_outer
+					compare = equals
+				}
+			}
+			localization_key = "[GetGermanicOuterCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_germanic_brittanic_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetGermanicBrittanicColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_germanic_other_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetGermanicOtherColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_baltic_eastern
+					compare = equals
+				}
+			}
+			localization_key = "[GetBalticEasternCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_baltic_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetBalticColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_celtic_brittanic
+					compare = equals
+				}
+			}
+			localization_key = "[GetCelticBrittanicCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_celtic_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetCelticColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_basque_basque
+					compare = equals
+				}
+			}
+			localization_key = "[GetBasqueBasqueCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_basque_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetBasqueColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_romance_portuguese
+					compare = equals
+				}
+			}
+			localization_key = "[GetRomancePortugueseCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_romance_spanish
+					compare = equals
+				}
+			}
+			localization_key = "[GetRomanceSpanishCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_romance_french
+					compare = equals
+				}
+			}
+			localization_key = "[GetRomanceFrenchCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_romance_italian
+					compare = equals
+				}
+			}
+			localization_key = "[GetRomanceItalianCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_romance_eastern
+					compare = equals
+				}
+			}
+			localization_key = "[GetRomanceEasternCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_romance_portuguese_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetRomancePortugueseColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_romance_spanish_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetRomanceSpanishColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_romance_french_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetRomanceFrenchColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_romance_other_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetRomanceOtherColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_hellenic_ionic_attic
+					compare = equals
+				}
+			}
+			localization_key = "[GetHellenicIonicAtticCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_hellenic_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetHellenicColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_illyrian_albanian
+					compare = equals
+				}
+			}
+			localization_key = "[GetIllyrianAlbanianCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_illyrian_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetIllyrianColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_slavic_southern
+					compare = equals
+				}
+			}
+			localization_key = "[GetSlavicSouthernCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_slavic_western
+					compare = equals
+				}
+			}
+			localization_key = "[GetSlavicWesternCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_slavic_eastern
+					compare = equals
+				}
+			}
+			localization_key = "[GetSlavicEasternCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_slavic_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetSlavicColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_uralic_finnic
+					compare = equals
+				}
+			}
+			localization_key = "[GetUralicFinnicCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_uralic_ugric
+					compare = equals
+				}
+			}
+			localization_key = "[GetUralicUgricCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_uralic_permic
+					compare = equals
+				}
+			}
+			localization_key = "[GetUralicPermicCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_uralic_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetUralicColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_caucasian_northern
+					compare = equals
+				}
+			}
+			localization_key = "[GetCaucasianNorthernCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_caucasian_southern
+					compare = equals
+				}
+			}
+			localization_key = "[GetCaucasianSouthernCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_caucasian_eastern
+					compare = equals
+				}
+			}
+			localization_key = "[GetCaucasianEasternCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_caucasian_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetCaucasianColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_armenic_armenic
+					compare = equals
+				}
+			}
+			localization_key = "[GetArmenicArmenicCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_armenic_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetArmenicColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_iranian_western
+					compare = equals
+				}
+			}
+			localization_key = "[GetIranianWesternCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_iranian_central
+					compare = equals
+				}
+			}
+			localization_key = "[GetIranianCentralCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_iranian_eastern
+					compare = equals
+				}
+			}
+			localization_key = "[GetIranianEasternCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_iranian_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetIranianColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_turkic_oghuz
+					compare = equals
+				}
+			}
+			localization_key = "[GetTurkicOghuzCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_turkic_kipchak
+					compare = equals
+				}
+			}
+			localization_key = "[GetTurkicKipchakCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_turkic_karlak
+					compare = equals
+				}
+			}
+			localization_key = "[GetTurkicKarlakCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_turkic_altaic
+					compare = equals
+				}
+			}
+			localization_key = "[GetTurkicAltaicCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_turkic_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetTurkicColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_semetic_jewish
+					compare = equals
+				}
+			}
+			localization_key = "[GetSemeticJewishCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_semetic_maghreb
+					compare = equals
+				}
+			}
+			localization_key = "[GetSemeticMaghrebCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_semetic_mashriq
+					compare = equals
+				}
+			}
+			localization_key = "[GetSemeticMashriqCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_semetic_azraq
+					compare = equals
+				}
+			}
+			localization_key = "[GetSemeticAzraqCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_semetic_ethiopic
+					compare = equals
+				}
+			}
+			localization_key = "[GetSemeticEthiopicCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_semetic_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetSemeticColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_aryan_indic
+					compare = equals
+				}
+			}
+			localization_key = "[GetAryanIndicCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_aryan_hindi
+					compare = equals
+				}
+			}
+			localization_key = "[GetAryanHindiCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_aryan_sahyadri
+					compare = equals
+				}
+			}
+			localization_key = "[GetAryanSahyadriCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_aryan_magadhan_prakit
+					compare = equals
+				}
+			}
+			localization_key = "[GetAryanMagadhanPrakitCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_aryan_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetAryanColonialCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_dravidian_southern
+					compare = equals
+				}
+			}
+			localization_key = "[GetDravidianSouthernCultureGroupList]"
+		}
+		text = {
+			trigger = {
+				check_variable = {
+					var = culture_group_temp
+					value = token:culture_group_dravidian_colonial
+					compare = equals
+				}
+			}
+			localization_key = "[GetDravidianColonialCultureGroupList]"
+		}
+		text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_sino_himilayan_bodic
+						compare = equals
+					}
+				}
+				localization_key = "[GetSinoHimilayanBodicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_sino_himilayan_brahmaputranic
+						compare = equals
+					}
+				}
+				localization_key = "[GetSinoHimilayanBrahmaputranicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_sino_himilayan_burmeic
+						compare = equals
+					}
+				}
+				localization_key = "[GetSinoHimilayanBurmeicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_sino_himilayan_south_sinitic
+						compare = equals
+					}
+				}
+				localization_key = "[GetSinoHimilayanSouthSiniticCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_sino_himilayan_north_sinitic
+						compare = equals
+					}
+				}
+				localization_key = "[GetSinoHimilayanNorthSiniticCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_sino_himilayan_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetSinoHimilayanColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_mongolic_mongol
+						compare = equals
+					}
+				}
+				localization_key = "[GetMongolicMongolCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_mongolic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetMongolicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_tungusic_tungusic
+						compare = equals
+					}
+				}
+				localization_key = "[GetTungusicTungusicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_tungusic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetTungusicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_kamchukotic_kamchukchee
+						compare = equals
+					}
+				}
+				localization_key = "[GetKamchukoticKamchukcheeCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_kamchukotic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetKamchukoticColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_ainuic_ainu
+						compare = equals
+					}
+				}
+				localization_key = "[GetAinuicAinuCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_ainuic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetAinuicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_koreanic_korean
+						compare = equals
+					}
+				}
+				localization_key = "[GetKoreanicKoreanCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_koreanic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetKoreanicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_japonic_japanese
+						compare = equals
+					}
+				}
+				localization_key = "[GetJaponicJapaneseCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_japonic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetJaponicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_daic_tai
+						compare = equals
+					}
+				}
+				localization_key = "[GetDaicTaiCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_daic_kadic
+						compare = equals
+					}
+				}
+				localization_key = "[GetDaicKadicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_daic_hmong
+						compare = equals
+					}
+				}
+				localization_key = "[GetDaicHmongCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_daic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetDaicColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_austro_asiastic_khasi
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustroAsiasticKhasiCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_austro_asiastic_mon_khmer
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustroAsiasticMonKhmerCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_austro_asiastic_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustroAsiasticColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_austronesian_formosan
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustronesianFormosanCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_austronesian_dhivehian
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustronesianDhivehianCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_austronesian_malayo_champaic
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustronesianMalayoChampaicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_austronesian_filipino
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustronesianFilipinoCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_austronesian_moulaccan
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustronesianMoulaccanCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_austronesian_oceanic
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustronesianOceanicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_austronesian_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetAustronesianColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_papuan_papuan
+						compare = equals
+					}
+				}
+				localization_key = "[GetPapuanPapuanCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_papuan_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetPapuanColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_pama_nyungan_pama
+						compare = equals
+					}
+				}
+				localization_key = "[GetPamaNyunganPamaCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_pama_nyungan_nyungan
+						compare = equals
+					}
+				}
+				localization_key = "[GetPamaNyunganNyunganCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_papuan_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetPamaNyunganColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_native_american_northern
+						compare = equals
+					}
+				}
+				localization_key = "[GetNativeAmericanNorthernCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_native_american_central
+						compare = equals
+					}
+				}
+				localization_key = "[GetNativeAmericanCentralCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_native_american_southern
+						compare = equals
+					}
+				}
+				localization_key = "[GetNativeAmericanSouthernCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_native_american_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetNativeAmericanColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_nilo_saharan_nile
+						compare = equals
+					}
+				}
+				localization_key = "[GetNiloSaharanNileCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_nilo_saharan_saharan
+						compare = equals
+					}
+				}
+				localization_key = "[GetNiloSaharanSaharanCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_nilo_saharan_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetNiloSaharanColonialGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_niger_congo_atlantic
+						compare = equals
+					}
+				}
+				localization_key = "[GetNigerCongoAtlanticCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_niger_congo_mande
+						compare = equals
+					}
+				}
+				localization_key = "[GetNigerCongoMandeCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_niger_congo_north_volta
+						compare = equals
+					}
+				}
+				localization_key = "[GetNigerCongoNorthVoltaCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_niger_congo_south_volta
+						compare = equals
+					}
+				}
+				localization_key = "[GetNigerCongoSouthVoltaCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_niger_congo_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetNigerCongoColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_bantu_northwest
+						compare = equals
+					}
+				}
+				localization_key = "[GetBantuNorthwestCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_bantu_central
+						compare = equals
+					}
+				}
+				localization_key = "[GetBantuCentralCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_bantu_southwest
+						compare = equals
+					}
+				}
+				localization_key = "[GetBantuSouthwestCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_bantu_savannic
+						compare = equals
+					}
+				}
+				localization_key = "[GetBantuSavannicCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_bantu_northeast
+						compare = equals
+					}
+				}
+				localization_key = "[GetBantuNortheastCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_bantu_southeast
+						compare = equals
+					}
+				}
+				localization_key = "[GetBantuSoutheastCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_bantu_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetBantuColonialCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_khosian_khosian
+						compare = equals
+					}
+				}
+				localization_key = "[GetKhosianKhosianCultureGroupList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = culture_group_temp
+						value = token:culture_group_khosian_colonial
+						compare = equals
+					}
+				}
+				localization_key = "[GetKhosianColonialCultureGroupList]"
+			}
+		}
+		defined_text = {
+			name = RenderReligionFamilyTransfer
+			text = {
+				trigger = {
+					check_variable = {
+						var = religion_family_temp
+						value = token:religion_family_christian
+						compare = equals
+					}
+				}
+				localization_key = "[GetChristianReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = religion_family_temp
+						value = token:religion_family_muslim
+						compare = equals
+					}
+				}
+				localization_key = "[GetMuslimReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = religion_family_temp
+						value = token:religion_family_other_abrahamic
+						compare = equals
+					}
+				}
+				localization_key = "[GetOtherAbrahamicReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = religion_family_temp
+						value = token:religion_family_iranian
+						compare = equals
+					}
+				}
+				localization_key = "[GetIranianReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = religion_family_temp
+						value = token:religion_family_indian
+						compare = equals
+					}
+				}
+				localization_key = "[GetIndianReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = religion_family_temp
+						value = token:religion_family_buddhist
+						compare = equals
+					}
+				}
+				localization_key = "[GetBuddhistReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = religion_family_temp
+						value = token:religion_family_eastern_folk
+						compare = equals
+					}
+				}
+				localization_key = "[GetEasternFolkReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = religion_family_temp
+						value = token:religion_family_eastern_pantheist
+						compare = equals
+					}
+				}
+				localization_key = "[GetEasternPantheistReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = religion_family_temp
+						value = token:religion_family_pagan
+						compare = equals
+					}
+				}
+				localization_key = "[GetPaganReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = religion_family_temp
+						value = token:religion_family_other
+						compare = equals
+					}
+				}
+				localization_key = "[GetCOtherReligionFamilyList]"
+			}
+			text = {
+				trigger = {
+					check_variable = {
+						var = religion_family_temp
+						value = token:religion_family_irreligious
+						compare = equals
+					}
+				}
+				localization_key = "[GetIrreligiousReligionFamilyList]"
+			}
+		}
+	#
+#
+
